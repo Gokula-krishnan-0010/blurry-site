@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus‑Mode Settings</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 12px; min-width: 260px; }
+    .section { margin-bottom: 12px; }
+    label { display: block; margin-bottom: 4px; font-weight: 600; }
+    input[type=range] { width: 100%; }
+    .toggle { display: flex; align-items: center; gap: 8px; }
+  </style>
+</head>
+<body>
+  <div class="section toggle">
+    <input type="checkbox" id="enabled">
+    <label for="enabled">Enable Focus‑Mode</label>
+  </div>
+
+  <div class="section">
+    <label for="blur">Blur radius (2‑20 px)</label>
+    <input type="range" id="blur" min="2" max="20" step="1">
+  </div>
+
+  <div class="section">
+    <label for="padding">Element padding (0‑40 px)</label>
+    <input type="range" id="padding" min="0" max="40" step="1">
+  </div>
+
+  <div class="section">
+    <label for="speed">Transition speed (0.1‑0.8 s)</label>
+    <input type="range" id="speed" min="0.1" max="0.8" step="0.01">
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
